@@ -2,8 +2,18 @@
 
 @section('content')
     <h1>Home</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque debitis illum repellendus, quaerat
-        quibusdam dolores unde, commodi, aliquam tempore incidunt quos doloremque. Ipsum veniam doloremque dolor harum at
-        deleniti soluta quibusdam earum doloribus, quo accusantium delectus. Fuga perferendis natus aliquid voluptatibus
-        molestias. Quisquam deserunt, atque ratione aperiam veritatis cumque.</p>
+
+    <div class="container d-flex flex-wrap">
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h3 class="card-title">Title</h3>
+                <h4>Original Title</h4>
+                <h5>Original Title</h5>
+                <p class="card-text">date</p>
+                <p class="card-text">vote</p>
+            </div>
+        </div>
+
+    </div>
 @endsection
