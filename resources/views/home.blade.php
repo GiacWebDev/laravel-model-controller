@@ -5,15 +5,18 @@
 
     <div class="container d-flex flex-wrap">
 
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h3 class="card-title">Title</h3>
-                <h4>Original Title</h4>
-                <h5>Original Title</h5>
-                <p class="card-text">date</p>
-                <p class="card-text">vote</p>
+        @foreach ($movies as $movie)
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h3 class="card-title">{{ $movie->title }}</h3>
+                    <h4>{{ $movie->original_title }}</h4>
+                    <h5>{{ $movie->nationality }}</h5>
+                    <p class="card-text">{{ $movie->date }}</p>
+                    <p class="card-text">{{ $movie->vote }}</p>
+                </div>
             </div>
-        </div>
+        @endforeach
+
 
     </div>
 @endsection
