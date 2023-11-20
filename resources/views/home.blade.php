@@ -1,9 +1,11 @@
 @extends('layouts.main')
 
 @section('content')
-    <h1>Home</h1>
+    <div class="container mt-5">
+        <h1>Home</h1>
+    </div>
 
-    <div class="container d-flex flex-wrap">
+    <div class="container mt-5 d-flex flex-wrap">
 
         @foreach ($movies as $movie)
             <div class="card" style="width: 18rem;">

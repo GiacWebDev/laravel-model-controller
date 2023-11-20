@@ -15,4 +15,12 @@ class PageController extends Controller
 
         return view('home', compact('movies'));
     }
+
+    public function favourite() {
+        return view('favourite');
+    }
+
+    public function dislike() {
+        return view('dislike');
+    }
 }
